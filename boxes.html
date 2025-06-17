@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Boxes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>✨ 21 Little Notes of Love ✨</h1>
+  <p class="subtitle">Each box holds a special message just for you 💕</p>
+  <div class="grid-container" id="boxGrid"></div>
+  
+  <div class="modal" id="noteModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="noteText"></p>
+    </div>
+  </div>
+  
+  <a href="index.html" class="back-button">Back to Home</a>
+  
+  <script src="data.js"></script>
+  <script>
+    const container = document.getElementById('boxGrid');
+    const modal = document.getElementById('noteModal');
+    const noteText = document.getElementById('noteText');
+    const closeBtn = document.querySelector(".close");
+    
+    for (let i = 0; i < 21; i++) {
+      const box = document.createElement('div');
+      box.className = 'box';
+      box.textContent = `${i + 1}`;
+      box.addEventListener('click', () => {
+        noteText.textContent = boxNotes[i];
+        modal.style.display = "block";
+      });
+      container.appendChild(box);
+    }
+    
+    closeBtn.onclick = () => modal.style.display = "none";
+    
+    window.onclick = (event) => {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

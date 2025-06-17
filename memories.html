@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Memories</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>21 Memories</h1>
+  <div class="bubble-container" id="bubbles"></div>
+  
+  <div class="modal" id="memoryModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="memoryText"></p>
+    </div>
+  </div>
+  
+  <a href="index.html" class="back-button">Back to Home</a>
+
+  <script src="data.js"></script>
+  <script>
+    const container = document.getElementById('bubbles');
+    const modal = document.getElementById('memoryModal');
+    const memoryText = document.getElementById('memoryText');
+    const closeBtn = document.querySelector(".close");
+    
+    memories.forEach((memory, index) => {
+      const bubble = document.createElement('div');
+      bubble.className = 'bubble';
+      bubble.textContent = "💬";
+      bubble.addEventListener('click', () => {
+        memoryText.textContent = memory;
+        modal.style.display = "block";
+      });
+      container.appendChild(bubble);
+    });
+    
+    closeBtn.onclick = () => modal.style.display = "none";
+    
+    window.onclick = (event) => {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

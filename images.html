@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1> Memories in Pictures</h1>
+  <div class="gallery" id="gallery"></div>
+
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="imgModal">
+  </div>
+  
+  <a href="index.html" class="back-button">Back to Home</a>
+
+  <script src="data.js"></script>
+  <script>
+    const gallery = document.getElementById('gallery');
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("imgModal");
+    const closeBtn = document.querySelector(".close");
+
+    imageFiles.forEach((file, idx) => {
+      const img = document.createElement('img');
+      img.src = `assets/images/${file}`;
+      img.alt = `Image ${idx + 1}`;
+      img.onclick = () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      };
+      gallery.appendChild(img);
+    });
+
+    closeBtn.onclick = () => modal.style.display = "none";
+    
+    window.onclick = (event) => {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

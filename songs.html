@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Songs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>21 Songs for You</h1>
+  <div class="songs-container">
+    <div class="songs-column">
+      <h2>Vibes 1-10</h2>
+      <ul id="songList1" class="song-list"></ul>
+    </div>
+    <div class="songs-column">
+      <h2>Vibes 11-21</h2>
+      <ul id="songList2" class="song-list"></ul>
+    </div>
+  </div>
+  
+  <a href="index.html" class="back-button">Back to Home</a>
+
+  <script src="data.js"></script>
+  <script>
+    const ul1 = document.getElementById("songList1");
+    const ul2 = document.getElementById("songList2");
+    
+    songList.forEach((song, index) => {
+      const li = document.createElement("li");
+      const targetUl = index < 10 ? ul1 : ul2;
+      const displayNumber = index < 10 ? index + 1 : index + 1;
+      
+      if (song.link.startsWith("https://music.apple.com")) {
+        li.innerHTML = `<span class="song-number">${displayNumber}.</span> <a href="${song.link}" class="itunes-link" target="_blank">${song.title}</a>`;
+      } else if (song.link.startsWith("spotify")) {
+        li.innerHTML = `<span class="song-number">${displayNumber}.</span> <a href="${song.link}" class="spotify-link">${song.title}</a>`;
+      } else {
+        li.innerHTML = `<span class="song-number">${displayNumber}.</span> ${song.title}`;
+      }
+      targetUl.appendChild(li);
+    });
+  </script>
+</body>
+</html>
