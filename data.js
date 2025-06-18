@@ -16,8 +16,13 @@ const memories = [
   "Remember when you put us through twerking academy and gave us homework, practice lessons, songs and everything LOL. I'm sorry I dropped out, you were a great teacher. It's not you, it's me </3", 
   "MADAME MBAPPEEEEEEEEE 2024!!!!!!!!!", 
   "You once sent me a voice note where you were trying to tell me something urgently and the triplets were yapping behind you. You paused for a second, and then at the top of your lungs went 'SHUT THE FUCK UP!', and then continued chatting like nothing had happened LOLLL. To this day it's one of my favorite memories of you.", 
-  "Memory 11", "Memory 12", "Memory 13", "Memory 14", "Memory 15", 
-  "Memory 16", "Memory 17", "Memory 18", "Memory 19", "Memory 20", "Memory 21"
+  "I’ll never forget that time we were on the boat and we did the parasailing, and we were having our own little conversation above the ocean and laughing like little girls..",
+  "That time someone was getting on my nerves at school and I found you in the bathroom but I was like on the verge of crying and you were so ready. You were on go mode, like who where? What’re we doing? Lol my hero fr",
+  "I gotta say kay, for someone who doesn’t really drink your tolerance was just insane. Remember when we would take shots before going to predrink?",
+  "I love how you’re so open and easy to talk to but also so considerate and soft, those two traits don’t usually find themselves together. Anyways I just look back at all the times we bumped into or met people we didn’t know, you always saved my ass. You can carry the convo, you can keep them interested, it’s just too easy for you- very social girly. We love that.",
+  "YOU ARE A GIVER. And everybody knows it. The man you marry is gonna be spoileddd, ur children will be spoiled, your loved ones are already spoiled bc of you. We love that about you, such pure kindness.",
+  "There’s this one time when we were in bed about to sleep but we ended up yapping and somehow stalking that one boy on insta. AND WE FOUND SOME TEA. Lmao you’re in the top 3 ppl I’ll call if I ever want to track someone down. You and coumba are easily up there.",
+  "Remember that one time areta was just doing too much and you checked her? And then she came later to apologize ? HAHAHAH iconnnnnn you are."
 ];
 
 const songList = [
