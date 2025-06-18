@@ -22,7 +22,11 @@ const memories = [
   "I love how you’re so open and easy to talk to but also so considerate and soft, those two traits don’t usually find themselves together. Anyways I just look back at all the times we bumped into or met people we didn’t know, you always saved my ass. You can carry the convo, you can keep them interested, it’s just too easy for you- very social girly. We love that.",
   "YOU ARE A GIVER. And everybody knows it. The man you marry is gonna be spoileddd, ur children will be spoiled, your loved ones are already spoiled bc of you. We love that about you, such pure kindness.",
   "There’s this one time when we were in bed about to sleep but we ended up yapping and somehow stalking that one boy on insta. AND WE FOUND SOME TEA. Lmao you’re in the top 3 ppl I’ll call if I ever want to track someone down. You and coumba are easily up there.",
-  "Remember that one time areta was just doing too much and you checked her? And then she came later to apologize ? HAHAHAH iconnnnnn you are."
+  "Remember that one time areta was just doing too much and you checked her? And then she came later to apologize ? HAHAHAH iconnnnnn you are.",
+  "Watching you and max argue or even have a conversation are my highlights of ASOY. Y'all were too funny - like tom and jerry.",
+  "So something I really love about you is that you're always ALWAYS ready for a chat. So quick to tuck your phone away when someone comes to chat to you, it's very welcoming. We love that.",
+  "I've never had someone teach me how to twerk let alone make me twerk every morning and whine for practice, with music - WHILE having ice cream for breakfast. That is an even that I would have never imagined would happen lol.. but I enjoyed it. I'll keep practicing, just to make you proud ;)",
+  "'She's not a chief alcoholic. she's just an alcoholic' never forget. You crowned me with the alcoholic title. Shit was actually too funny if you think about it."
 ];
 
 const songList = [
@@ -45,7 +49,8 @@ const songList = [
   { title: "Come Over - Jorja Smith & Popcaan", link: "https://music.apple.com/search?term=come+over+jorja+smith+popcaan" },
   { title: "Woza - Mr JazziQ & Kabza De Small", link: "https://music.apple.com/search?term=woza+mr+jazziq+kabza+de+small" },
   { title: "Manzi Nte - Tyler ICU", link: "https://music.apple.com/search?term=manzi+nte+tyler+icu" },
-  { title: "Jealousy - Tyler ICU", link: "https://music.apple.com/search?term=jealousy+tyler+icu" }
+  { title: "Jealousy - Tyler ICU", link: "https://music.apple.com/search?term=jealousy+tyler+icu" },
+  { title: "In Da Club - 50 Cent", link: "https://music.apple.com/search?term=in+da+club+50+cent" }
 ];
 
 const imageFiles = [
